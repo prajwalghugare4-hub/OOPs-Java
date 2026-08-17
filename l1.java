@@ -6,8 +6,19 @@ class A
         System.out.println(random.rn + " " + random.name);
 
         // Example: using the copy constructor (object inside object)
-        Student copy = new Student(random);
-        System.out.println(copy.rn + " " + copy.name);
+        Student s2 = new Student(random);
+        System.out.println(s2.rn + " " + s2.name);
+
+
+        //Refrence objects pointing to same memory address
+        //If one.name gets change then two.name also gets change
+        Student one =new Student();
+        Student two =one;
+
+        one.name="Something something";
+        System.out.println(two.name);
+
+
     }
 }
 
