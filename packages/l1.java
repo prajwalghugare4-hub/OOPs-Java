@@ -31,7 +31,7 @@ class Student{
     // constructor overloading: When we call object with the parameters the constructor 2 will be printed
     // When we call constructor with zero parameters then it will call constructor 1
 
-    Student(Student other){
+    Student(Student other){           //To prevent constructor overloading 
         this.name=other.name;
         this.rn=other.rn;
     }
