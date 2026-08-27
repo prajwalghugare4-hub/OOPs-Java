@@ -43,3 +43,11 @@ public class Box
         System.out.println("Running the box");
     }
 }
+
+class M
+{
+   Box red=new Box(4 ,5,3);
+    {
+        System.out.println(red.l);
+    }
+}
