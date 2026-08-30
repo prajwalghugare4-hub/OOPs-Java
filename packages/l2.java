@@ -1,4 +1,4 @@
- // Static is keyword which belongs to class funstion and which is indpendent on objects
+ // Static is keyword which belongs to class function and which is indpendent on objects
  // Non Static is dependent on objects and can access inside the object funtion only
  import java.util.*;
  
