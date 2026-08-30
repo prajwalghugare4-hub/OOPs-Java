@@ -1,3 +1,4 @@
+package properties.Inheritance;
 // 1. Inheritance: A Child Class is Inherting properties from base class.
 // Child class will have the extend propeties also the inherting properties of base class but base class
 // will not have extend properties of child class

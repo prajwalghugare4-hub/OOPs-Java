@@ -1,3 +1,4 @@
+package properties.Inheritance;
 import java.util.*;
 public class BoxWeight extends Box {
      double weight;
