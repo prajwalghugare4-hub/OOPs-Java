@@ -2,7 +2,7 @@
  // Non Static is dependent on objects and can access inside the object funtion only
  import java.util.*;
  
-
+import properties.Access.A;
 class B 
 {  
      
@@ -13,6 +13,9 @@ class B
         System.out.println(Yash.name);
         System.out.println(Yash.salary);
         System.out.println(Yash.country);
+
+     A obj =new A(11,"Yash");
+     System.out.println(obj.getNum());
         
         // System - class
         // out - variable
