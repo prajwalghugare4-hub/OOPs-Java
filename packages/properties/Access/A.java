@@ -2,14 +2,14 @@ package properties.Access;
 
 public class A {
     private int num;
-    String name;
+    protected String name;
     int []arr;
     
-    public int getNum(){
+    public int getNum(){       // Getter function to get private varoable
         return num;
     }
 
-    public void setNUm(int num){
+    public void setNUm(int num){    //Setter Function for setting the variable
         this.num=num;
     }
     public A(int num,String name){
