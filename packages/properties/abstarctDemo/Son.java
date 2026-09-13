@@ -1,14 +1,17 @@
 package packages.properties.abstarctDemo;
 
 public class Son extends Parent{
- int age;
-    @Override
-    void career(String name) {
-         System.out.println("I am going to be a " + name);
+
+    public Son() {
     }
 
     @Override
-    void parent(String name, int age) {
-        System.out.println("I Love "+ name+ " she is "+ age +"old.");
+    void career() {
+        System.out.println(" I am want to be PM");
+    }
+
+    @Override
+    void patner() {
+        System.out.println(" I love Kiara");
     }
 }
