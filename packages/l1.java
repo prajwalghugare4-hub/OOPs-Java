@@ -25,7 +25,7 @@ class A
 class Student{
     int rn;
     String name;
-    // constructor : It is a special fuction that creates an object
+    // constructor : It is a special fuction that creates an object inside the subclass
     // this - Keyword for accessing the current object's own fields inside the class
 
     // constructor overloading: When we call object with the parameters the constructor 2 will be printed
@@ -40,6 +40,7 @@ class Student{
       Student(){
         this.rn=13;
         this.name="Prajwal";
+        // this 
       }
 
       // constructor 2

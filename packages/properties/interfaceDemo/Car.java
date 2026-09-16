@@ -3,6 +3,7 @@ package packages.properties.interfaceDemo;
 public class Car implements Engine,Brake,Media,Company{
     @Override
     public void brake() {
+
         System.out.println("I brake like a normal car");
     }
 
@@ -13,11 +14,13 @@ public class Car implements Engine,Brake,Media,Company{
 
     @Override
     public void stop() {
+
         System.out.println("I stop like a normal car");
     }
 
     @Override
     public void accelerate() {
+
         System.out.println("I accelerate like a normal car");
     }
 
