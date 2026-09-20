@@ -1,18 +1,20 @@
 package packages.properties.generics;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
-public class CustomArrayList {
 
-    private int[] data;
+public class CustomGenArrayList <T>{
+
+    private Object[]data;
     private static final int DEFAULT_SIZE=10;
     private int size=0;
 
-    public CustomArrayList() {
-        this.data=new int[DEFAULT_SIZE];
+    public CustomGenArrayList() {
+        this.data=new Object[DEFAULT_SIZE];
     }
 
-    public void add(int num){
+    public void add(T num){
         if(isFull()){
             resize();
         }
@@ -21,7 +23,7 @@ public class CustomArrayList {
 
 
     private void resize() {
-        int []temp=new int[data.length*2];
+       Object[]temp=new Object[data.length*2];
         // copy elements current to temp
         for(int i=0;i< data.length;i++) {
             temp[i]=data[i];
@@ -39,19 +41,22 @@ public class CustomArrayList {
 
     }
 
-    public int remove(){
-        return data[--size];
+    public T remove(){
+       T removed=(T) (data[--size]);
+       return removed;
     }
 
-    public int get(int index){
-        return data[index];
+    public T  get(int index){
+
+        return (T) data[index];
     }
 
     public int size(){
+
         return size;
     }
 
-    public void set(int index,int value){
+    public void set(int index,T value){
         data[index]=value;
     }
 
@@ -64,16 +69,15 @@ public class CustomArrayList {
     }
 
     public static void main(String[] args) {
-        CustomArrayList lis=new CustomArrayList();
+        CustomGenArrayList<Character> lis = new CustomGenArrayList<>();
 //        lis.add(3);
 //        lis.add(4);
 //        lis.add(8);
-
-        for(int i=0;i<14;i++){
-            lis.add(2*i);
+        for (char i = 'A'; i <= 'Z'; i++) {
+            if(i=='B')continue;
+            lis.add(i);
         }
 
         System.out.println(lis);
-
     }
 }
